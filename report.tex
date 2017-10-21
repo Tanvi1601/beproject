@@ -10,6 +10,18 @@
 %\hoffset = 8.9436619718309859154929577464789pt
 %\voffset = 13.028169014084507042253521126761pt
 
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[CE]{College_Name, Department of Computer Engineering 2015}
+  \fancyfoot[RE]{\thepage}
+}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+\footskip = 0.625in
+\cfoot{}
+\rfoot{}
+
 \usepackage[]{hyperref}
 \usepackage{tikz}
 \usetikzlibrary{arrows,shapes,snakes,automata,backgrounds,petri}
@@ -38,7 +50,7 @@
  \vspace*{1\baselineskip}
 {\bfseries A PRELIMINARY PROJECT REPORT ON \\}
  \vspace*{2\baselineskip}
-{\bfseries \fontsize{16}{12} \selectfont OCR Preprocessing \\ \vspace*{2\baselineskip}}
+{\bfseries \fontsize{16}{12} \selectfont BE PROJECT TITLE \\ \vspace*{2\baselineskip}}
 {\fontsize{12}{12} \selectfont SUBMITTED TOWARDS THE
  \\PARTIAL FULFILLMENT OF THE REQUIREMENTS OF \\
 
@@ -48,18 +60,18 @@ Engineering) \\
 \vspace*{1\baselineskip}} 
 {\bfseries \fontsize{14}{12} \selectfont BY \\ 
 \vspace*{1\baselineskip}} 
-Anushi Keswani  \hspace{25 mm} Exam No:  \\
-Anushka Chandak \hspace{25 mm} Exam No:   \\
-Sahil Agarwal \hspace{25 mm} Exam No:  \\
-Tanvi Pardeshi \hspace{25 mm} Exam No:\\
+Student Name  \hspace{25 mm} Exam No:  \\
+Student Name \hspace{25 mm} Exam No:   \\
+Student Name \hspace{25 mm} Exam No:  \\
+Student Name \hspace{25 mm} Exam No:\\
 \vspace*{2\baselineskip}
 {\bfseries \fontsize{14}{12} \selectfont Under The Guidance of \\  
 \vspace*{2\baselineskip}} 
-Prof. P.P.Joshi\\
-\includegraphics[width=100pt]{CollegeLogo.jpg} \\
+Prof. Guide Name\\
+\includegraphics[width=100pt]{collegelogo.png} \\
 {\bfseries \fontsize{14}{12} \selectfont DEPARTMENT OF COMPUTER ENGINEERING \\
-Pune Institute of Computer Technology \\
-Sr. No 27, Pune-Satara Road, Behind Bharati Vidyapeeth College, Dhankawadi, Pune, Maharashtra 411043
+College Name \\
+College Address 
 }
 \end{center}
 
@@ -95,7 +107,7 @@ Sr. No 27, Pune-Satara Road, Behind Bharati Vidyapeeth College, Dhankawadi, Pune
 \centerline{Student Name \hspace{25 mm} Exam No: }
 \centerline{Student Name \hspace{25 mm} Exam No: }
 \vspace*{1\baselineskip} 
-is a bonafide work carried out by Students under the supervision of Prof. Guide Name and it
+is a bonfire work carried out by Students under the supervision of Prof. Guide Name and it
 is submitted towards the partial fulfillment of the requirement of Bachelor of Engineering (Computer Engineering) Project.\\\\\\
 
 \bgroup
@@ -123,7 +135,7 @@ Dept. of Computer Engg.  &	\hspace{50 mm}Dept. of Computer Engg.  \\
 {  \newpage {\bfseries \fontsize{14}{12} \selectfont \centerline{Abstract} 
 \vspace*{2\baselineskip}} \setlength{\parindent}{11mm} }
 { \setlength{\parindent}{0mm} }
-Please Write here One Page Abstract. It should mainly include introduction, motivation,outcome and innovation if any.
+Optical character recognition (OCR) converted printed scanned text image into editable text. Image pre-processing modules like skew correction, binarization, layout analysis, line segmentation,  word segmentation, character segmentation, etc are required before calling OCR. The work done here focuses on skew correction, binarization of degraded documents and text-non text classification. These three modules are very important to increase OCR accuracy. Skew correction is to detect and correct skewed scanned document images. Binarization is converting grayscale or color image to black-and-white image. This becomes a challenging task for degraded documents wherein background and foreground is not clearly identifiable. Text-non text processing includes document analysis to classify the given scanned image of document into different entities, i.e., text, image, graphs, tables, etc. and is represented as bounded boxes. Automatic document layout extraction and segmentation is done by analyzing the spatial configuration of these entities in the image. Passing this processed information to OCR module enhances the performance of OCR by allowing it to identify only the interested parts and classify the documents into various categories. 
 
 
 {  \newpage {\bfseries \fontsize{14}{12} \selectfont \centerline{Acknowledgments} 
@@ -131,27 +143,27 @@ Please Write here One Page Abstract. It should mainly include introduction, moti
 { \setlength{\parindent}{0mm} }
 Please Write here Acknowledgment.Example given as\\
 \textit{It gives us great pleasure in presenting the preliminary project report 
-on {\bfseries \fontsize{12}{12} \selectfont `BE PROJECT TITLE'}.}
+on {\bfseries \fontsize{12}{12} \selectfont `OCR-Preprocessing modules for skew correction, classification of Text- Non text Data and binarization of degraded documents'}.}
 \vspace*{1.5\baselineskip}
 
  \textit{I would like to take this opportunity to thank my internal guide
- \textbf{Prof. Guide Name} for giving me all the help and guidance I needed. I am
+ \textbf{Prof. P.P. Joshi} for giving me all the help and guidance I needed. I am
  really grateful to them for their kind support. Their valuable suggestions were very helpful.} \vspace*{1.5\baselineskip}
 
- \textit{I am also grateful to \textbf{Prof. HOD Name}, Head of Computer
- Engineering Department, CollegeName for his indispensable
+ \textit{I am also grateful to \textbf{Prof. Ingle}, Head of Computer
+ Engineering Department, Pune Institute of Computer Technology for his indispensable
  support, suggestions.}
 \vspace*{1.5\baselineskip}
 
-\textit{In the end our special thanks to \textbf{Other Person Name} for
+\textit{In the end our special thanks to \textbf{Mr. Manish Gupta} for
 providing various resources such as  laboratory with all needed software platforms,
 continuous Internet connection, for Our Project.}
 \vspace*{3\baselineskip} \\
 \begin{tabular}{p{8.2cm}c}
-&Student Name1\\
-&Student Name2\\
-&Student Name3\\
-&Student Name4\\
+&Anushi Keswani\\
+&Anushka Chandak\\
+&Sahil Sanjay Agarwal\\
+&Tanvi Pardeshi\\
 &(B.E. Computer Engg.)
 %}
 \end{tabular}
@@ -186,16 +198,18 @@ continuous Internet connection, for Our Project.}
 \chapter{Synopsis}
 
 \section{Project Title}
-BE Project Title
+OCR-Preprocessing modules for skew correction, classification of Text- Non text Data and binarization of degraded documents 
+
 
 \section{ Project Option }
-Please mention type either industry sponsored, entrepreneur or internal project
+Industry Sponsored Project: CDAC, Pune.
 
 \section{Internal Guide}
-Prof. Internal Guide Name
+Prof. P.P. Joshi
 
 \section{ Sponsorship and External Guide} 
-Please write if any sponsorship
+CDAC, Pune Sponsored project.\\
+External guide : Mr. Manish Gupta
 
 
 \section{Technical Keywords (As per ACM Keywords)}
